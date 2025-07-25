@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="cart-header">
+        <div class="cart-header__main" data-qa="header">
+          <div class="d-flex align-items-center flex-grow">
+            <a href="/" class="cart-logo cart-logo--link">
+              <img src="images/header-footer.png" alt="" class="logo" />
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="hcart-stepper container">
+        <div class="sale-banner" data-qa="sale-banner">
+          <div class="sale-banner__container">
+            <div class="countdown-timer sale-banner__timer" data-qa="timer">
+              <div class="countdown-timer__container"><span class="t-body-4">Don’t miss out!</span><time class="t-headline-pt">00 : 00 : 00 : 00</time></div>
+            </div>
+            <div class="sale-banner__text-wrapper">
+              <h3>+ 3 months free hosting with a 48-month plan</h3>
+            </div>
+          </div>
+          <img src="./images/sale-percent.png" alt="Sale" class="sale-banner__image" />
+          <div class="sale-banner__elipsis-left"></div>
+          <div class="sale-banner__elipsis-right"></div>
+        </div>
+        <div class="cart-heading h-pt-32 h-pt-48-lg">
+          <h1 class="flex-grow h-m-0 order-1 order-0-lg">Your cart</h1>
+        </div>
+        <div class="hcart-stepper__wrapper">
+          <div class="hcart-stepper__container--left d-flex flex-column h-g-16 h-mt-32">
+            <div class="cart-choose-period" type="HOSTING">
+              <div class="cart-choose-period__step">
+                <div class="cart-periods" data-qa="plan-section" addons="">
+                  <div class="d-flex justify-content-space-between align-items-center">
+                    <div class="d-flex h-g-16 h-g-24-lg align-items-center">
+                      <div class="d-flex h-g-4 flex-column">
+                        <h3 class="cart-periods__plan-name" data-qa="plan-name" data-qa-value="Premium Web Hosting">Premium Web Hosting</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-periods__plan-container h-mt-16 h-pt-16">
+                    <div class="cart-periods__select">
+                      <div class="h-select" data-qa="period-input">
+                        <div class="h-input primary500">
+                          <div class="h-form-field-label t-body-4">Period</div>
+                          <div class="h-input__input-wrapper">
+                            <input class="h-input__input" placeholder="48 months" type="text" data-1p-ignore="false" aria-label="Period" readonly="" />
+                            <div class="h-form-field-icon">
+                              <div class="d-inline-flex h-ml-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" class="h-icon" data-qa="dropdown-icon" style="color: var(--neutral--500)">
+                                  <path fill="currentColor" d="M17.957 10.457a1 1 0 0 0-1.414-1.414L12 13.586 7.457 9.043a1 1 0 0 0-1.414 1.414l5.25 5.25a1 1 0 0 0 1.414 0z"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="h-select__select--wrapper" data-qa="dropdown">
+                          <div class="h-select__select">
+                            <div class="h-select__option" data-qa="dropdown-option">1 month</div>
+                            <div class="h-select__option" data-qa="dropdown-option">12 months</div>
+                            <div class="h-select__option" data-qa="dropdown-option">24 months</div>
+                            <div class="h-select__option active" data-qa="dropdown-option">48 months</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-periods__pricing h-mt-28-md">
+                      <div class="cart-periods__pricing--save" data-qa="period-discount-label">Save ₹22,080.00</div>
+                      <div class="cart-periods__pricing--price">
+                        <div class="t-body-2" data-qa="period-price" data-qa-value="₹139.00"><b>₹139.00/month</b></div>
+                        <small class="t-body-3-line-through" data-qa="period-old-price" data-qa-value="₹599.00">₹599.00/month</small>
+                      </div>
+                    </div>
+                  </div>
+                  <small class="cart-plan__renew t-body-4 cart-periods__renewal h-mt-8 h-mt-12-md" data-qa="period-renewal-line" period-renewal-date="25/10/2029">Renews at ₹449.00/mo for a year. Cancel anytime.</small>
+                  <div class="d-flex flex-column h-mt-16 h-mt-24-md">
+                    <div class="addon t-body-4 addon--background-success100" data-qa="period-banner">
+                      <div>Great news! Your <b>FREE domain</b> + 3 months <b>FREE hosting</b> are included with this order.</div>
+                      <div class="v-popper v-popper--theme-tooltip h-tooltip">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="h-icon h-icon--small" data-qa="icon" style="color: var(--neutral--600)">
+                            <path fill="currentColor" d="M7.02 6.487c0-.541.44-.98.98-.98h.128c.47 0 .851.382.851.852a.7.7 0 0 1-.054.265.5.5 0 0 1-.052.097.2.2 0 0 1-.026.03l-.59.442C7.69 7.62 7.25 8.24 7.25 9.081a.75.75 0 0 0 1.5 0c0-.247.106-.461.408-.688l.589-.442c.533-.4.732-1.093.732-1.592a2.35 2.35 0 0 0-2.35-2.352H8a2.48 2.48 0 0 0-2.48 2.48.75.75 0 0 0 1.5 0M7.992 10.493a.75.75 0 0 0 0 1.5H8a.75.75 0 0 0 0-1.5z"></path>
+                            <path fill="currentColor" fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0m-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-block-lg">
+            <div class="hcart-estimate h-mt-32" data-qa="checkout-section">
+              <div class="hcart-estimate--pricing--small">
+                <div class="d-flex flex-column">
+                  <div class="hcart-estimate__line-title t-body-3">
+                    <div class="t-headline-pt">Order summary</div>
+                  </div>
+                  <div><span class="hcart-estimate__estimate-total t-body-3">Subtotal:&nbsp; </span><span class="t-headline-pt">₹6,672.00</span></div>
+                </div>
+                <button class="h-icon-button" aria-label="Expand" aria-disabled="false" aria-busy="false" tabindex="0" style="--4d45c026: var(--transparent); --d936888a: 1px solid transparent; --ee1f8c18: var(--primary--500); --3ae1a490: var(--neutral--300); --bca24e7c: var(--transparent); --4e776f57: 1px solid transparent; --489d3a41: 1px solid transparent; --3f6966b8: var(--primary--50); --75d4b7a8: var(--primary--500)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" class="h-icon" data-qa="icon" style="color: var(--neutral--1000)">
+                    <path fill="currentColor" d="M12.707 9.043a1 1 0 0 0-1.414 0l-5.25 5.25a1 1 0 1 0 1.414 1.414L12 11.164l4.543 4.543a1 1 0 0 0 1.414-1.414z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="hcart-estimate--pricing">
+                <div class="scrollable-area">
+                  <div class="hcart-estimate__line-title d-none d-block-lg t-body-3">
+                    <div class="t-headline-pt h-mb-16">Order summary</div>
+                  </div>
+                  <div class="hcart-estimate__plan-info">
+                    <div class="d-flex align-items-center">
+                      <div class="plan-info__plan-name plan-info__plan-name--desktop h-my-0 align-items-center t-body-3-bold" data-qa="plan-name" data-qa-value="Premium Web Hosting">Premium Web Hosting</div>
+                      <div class="plan-info__plan-name h-my-0 t-body-4-bold">Premium Web Hosting</div>
+                    </div>
+                    <div class="hcart-estimate__plan-months d-flex justify-content-space-between align-items-center t-body-4" data-qa="plan-information-line">
+                      <div>48-month plan</div>
+                      <div class="d-flex align-items-center">
+                        <div class="hcart-estimate__old-price t-body-5-line-through h-mr-8" data-qa="plan-old-price">₹28,752.00</div>
+                        <b data-qa="plan-price">₹6,672.00</b>
+                      </div>
+                    </div>
+                    <div class="hcart-estimate__perks">
+                      <div class="payment-addon" data-qa="addon-line" data-qa-value="extra_months">
+                        <div class="flex-grow d-flex align-items-center">
+                          <div class="payment-addon__name t-body-4">3 extra months</div>
+                        </div>
+                        <div class="payment-addon__old-price t-body-5-line-through h-mr-8" data-qa="addon-old-price">₹1,797.00</div>
+                        <div class="payment-addon__pricing">
+                          <div class="payment-addon__price t-body-4-bold" data-qa="addon-price">₹0.00</div>
+                        </div>
+                      </div>
+                      <div class="payment-addon" data-qa="addon-line" data-qa-value="domain">
+                        <div class="flex-grow d-flex align-items-center">
+                          <div class="payment-addon__name t-body-4">Domain name</div>
+                          <div class="v-popper v-popper--theme-tooltip h-tooltip">
+                            <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="h-icon h-icon--small payment-addon__help" data-qa="icon" style="color: var(--primary--500)">
+                                <path fill="currentColor" d="M7.02 6.487c0-.541.44-.98.98-.98h.128c.47 0 .851.382.851.852a.7.7 0 0 1-.054.265.5.5 0 0 1-.052.097.2.2 0 0 1-.026.03l-.59.442C7.69 7.62 7.25 8.24 7.25 9.081a.75.75 0 0 0 1.5 0c0-.247.106-.461.408-.688l.589-.442c.533-.4.732-1.093.732-1.592a2.35 2.35 0 0 0-2.35-2.352H8a2.48 2.48 0 0 0-2.48 2.48.75.75 0 0 0 1.5 0M7.992 10.493a.75.75 0 0 0 0 1.5H8a.75.75 0 0 0 0-1.5z"></path>
+                                <path fill="currentColor" fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0m-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" clip-rule="evenodd"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="payment-addon__old-price t-body-5-line-through h-mr-8" data-qa="addon-old-price">₹1,159.00</div>
+                        <div class="payment-addon__pricing">
+                          <div class="payment-addon__price t-body-4-bold" data-qa="addon-price">₹0.00</div>
+                        </div>
+                      </div>
+                      <div class="payment-addon" data-qa="addon-line" data-qa-value="privacy_protection">
+                        <div class="flex-grow d-flex align-items-center">
+                          <div class="payment-addon__name t-body-4">Domain privacy protection</div>
+                        </div>
+                        <div class="payment-addon__pricing">
+                          <div class="payment-addon__price t-body-4-bold" data-qa="addon-price">₹0.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hcart-estimate__divider h-mt-24"></div>
+                </div>
+                <div class="hcart-estimation-taxes">
+                  <div class="d-flex align-items-center justify-content-space-between">
+                    <div class="d-flex align-items-center t-body-3">Taxes</div>
+                    <div class="t-body-3" data-qa="taxes">-</div>
+                  </div>
+                  <div class="hcart-estimation-taxes__tax-hint t-body-4">Calculated after you provide your billing address</div>
+                </div>
+                <div class="hcart-estimate__divider"></div>
+                <div class="hcart-estimation-total">
+                  <div class="d-flex align-items-center justify-content-space-between">
+                    <div class="t-headline-pt">Subtotal</div>
+                    <div class="d-flex align-items-center">
+                      <div class="hcart-estimation-total__old-price t-body-5-line-through h-mr-8" data-qa="subtotal-old-price">₹31,708.00</div>
+                      <div class="t-headline-pt" data-qa="subtotal-price">₹6,672.00</div>
+                    </div>
+                  </div>
+                  <div class="h-mt-16">
+                    <div><a id="hcart-have-a-coupon-btn" class="t-body-3-bold" data-qa="have-a-coupon-code-button" aria-label="Have a coupon code?">Have a coupon code?</a></div>
+                  </div>
+                </div>
+              </div>
+              <button class="h-button-v2 h-button-v2--large hcart-estimate__continue-button" aria-label="Continue" aria-expanded="false" data-qa="continue-button" style="--61835142: var(--neutral--0); --871d3846: var(--neutral--0); --0f634a62: var(--primary--500); --5fee621c: 1px solid transparent; --4572d579: var(--neutral--0); --5eaa8b2a: var(--neutral--300); --d3e748e4: 1px solid transparent; --1c67916a: 1px solid transparent; --761418ca: var(--primary--600)">
+                <div class="h-button-v2__loader" style="display: none">
+                  <div class="loader" data-qa="loader" style="--61c1c1bf: 4px; --54d0f536: var(--neutral--0); --3e0be0b1: var(--primary--500); --3f22df14: 24px; --e92becce: 24px"></div>
+                </div>
+                <span class="h-typography h-typography-button-1 h-button-v2__text">Continue</span>
+              </button>
+            </div>
+            <div class="money-back-guarantee-section t-body-3 h-mt-24" data-qa="money-back-guarantee-line">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="h-icon h-icon--small" data-qa="icon" style="color: var(--neutral--1000)">
+                <path fill="currentColor" d="M10.838 6.518a.76.76 0 0 0 0-1.075.756.756 0 0 0-1.072 0L7.471 7.745 6.456 6.727a.756.756 0 0 0-1.071 0 .76.76 0 0 0 0 1.075l1.547 1.552.003.003a.756.756 0 0 0 1.072 0z"></path>
+                <path fill="currentColor" fill-rule="evenodd" d="M1.003 4.4A2.03 2.03 0 0 1 2.17 2.45L7.019.19A2.02 2.02 0 0 1 8.694.176l5.108 2.285a2.03 2.03 0 0 1 1.195 1.963l-.006.105c-.228 4.116-2.06 8.252-5.766 10.035-.556.268-1.039.436-1.372.436-.338 0-.817-.174-1.363-.448-3.548-1.783-5.246-5.805-5.466-9.779zm12.48-.06-.005.105c-.211 3.806-1.888 7.295-4.909 8.749q-.36.172-.582.243-.094.03-.132.037a1 1 0 0 1-.122-.036 5 5 0 0 1-.564-.245C4.299 11.751 2.74 8.375 2.537 4.69l-.02-.373a.51.51 0 0 1 .29-.487l4.85-2.262a.5.5 0 0 1 .42-.003l5.108 2.285c.191.085.31.28.299.49" clip-rule="evenodd"></path></svg
+              ><span>30-day money-back guarantee</span>
+            </div>
+          </div>
+        </div>
+        <div class="money-back-guarantee-section t-body-3 d-none-lg h-mt-24" data-qa="money-back-guarantee-line">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="h-icon h-icon--small" data-qa="icon" style="color: var(--neutral--1000)">
+            <path fill="currentColor" d="M10.838 6.518a.76.76 0 0 0 0-1.075.756.756 0 0 0-1.072 0L7.471 7.745 6.456 6.727a.756.756 0 0 0-1.071 0 .76.76 0 0 0 0 1.075l1.547 1.552.003.003a.756.756 0 0 0 1.072 0z"></path>
+            <path fill="currentColor" fill-rule="evenodd" d="M1.003 4.4A2.03 2.03 0 0 1 2.17 2.45L7.019.19A2.02 2.02 0 0 1 8.694.176l5.108 2.285a2.03 2.03 0 0 1 1.195 1.963l-.006.105c-.228 4.116-2.06 8.252-5.766 10.035-.556.268-1.039.436-1.372.436-.338 0-.817-.174-1.363-.448-3.548-1.783-5.246-5.805-5.466-9.779zm12.48-.06-.005.105c-.211 3.806-1.888 7.295-4.909 8.749q-.36.172-.582.243-.094.03-.132.037a1 1 0 0 1-.122-.036 5 5 0 0 1-.564-.245C4.299 11.751 2.74 8.375 2.537 4.69l-.02-.373a.51.51 0 0 1 .29-.487l4.85-2.262a.5.5 0 0 1 .42-.003l5.108 2.285c.191.085.31.28.299.49" clip-rule="evenodd"></path></svg
+          ><span>30-day money-back guarantee</span>
+        </div>
+      </div>
+      <div class="cart-footer" data-qa="footer">
+        <div class="cart-footer__container">
+          <p class="cart-footer__text cart-footer__text--copy t-body-4">© 2004-2025 mujahidrakib</p>
+          <a href="\" target="_blank" class="cart-footer__link t-body-4" aria-label="Terms of service" data-qa="footer-link-terms-of-service">Terms of service</a><a href="/">Privacy policy</a>
+        </div>
+      </div>
+      <div class="hcart-estimate hcart-stepper__container--sticky d-none-lg" data-qa="mobile-layout">
+        <div class="hcart-estimate--pricing--small order-summary-collapsed">
+          <div class="d-flex flex-column">
+            <div class="hcart-estimate__line-title t-body-3">
+              <div class="t-headline-pt">Order summary</div>
+            </div>
+            <div><span class="hcart-estimate__estimate-total t-body-3">Subtotal:&nbsp; </span><span class="t-headline-pt">₹6,672.00</span></div>
+          </div>
+          <button class="h-icon-button" id="expand-summary" aria-label="Expand" aria-disabled="false" aria-busy="false" tabindex="0" style="--4d45c026: var(--transparent); --d936888a: 1px solid transparent; --ee1f8c18: var(--primary--500); --3ae1a490: var(--neutral--300); --bca24e7c: var(--transparent); --4e776f57: 1px solid transparent; --489d3a41: 1px solid transparent; --3f6966b8: var(--primary--50); --75d4b7a8: var(--primary--500)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" class="h-icon" data-qa="icon" style="color: var(--neutral--1000)">
+              <path fill="currentColor" d="M12.707 9.043a1 1 0 0 0-1.414 0l-5.25 5.25a1 1 0 1 0 1.414 1.414L12 11.164l4.543 4.543a1 1 0 0 0 1.414-1.414z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hcart-estimate--pricing">
+          <div class="scrollable-area">
+            <div class="hcart-estimate__line-title d-none d-block-lg t-body-3">
+              <div class="t-headline-pt h-mb-16">Order summary</div>
+            </div>
+            <div class="hcart-estimate__plan-info">
+              <div class="d-flex align-items-center">
+                <div class="plan-info__plan-name plan-info__plan-name--desktop h-my-0 align-items-center t-body-3-bold" data-qa="plan-name" data-qa-value="Premium Web Hosting">Premium Web Hosting</div>
+                <div class="plan-info__plan-name h-my-0 t-body-4-bold">Premium Web Hosting</div>
+              </div>
+              <div class="hcart-estimate__plan-months d-flex justify-content-space-between align-items-center t-body-4" data-qa="plan-information-line">
+                <div>48-month plan</div>
+                <div class="d-flex align-items-center">
+                  <div class="hcart-estimate__old-price t-body-5-line-through h-mr-8" data-qa="plan-old-price">₹28,752.00</div>
+                  <b data-qa="plan-price">₹6,672.00</b>
+                </div>
+              </div>
+              <div class="hcart-estimate__perks">
+                <div class="payment-addon" data-qa="addon-line" data-qa-value="extra_months">
+                  <div class="flex-grow d-flex align-items-center">
+                    <div class="payment-addon__name t-body-4">3 extra months</div>
+                  </div>
+                  <div class="payment-addon__old-price t-body-5-line-through h-mr-8" data-qa="addon-old-price">₹1,797.00</div>
+                  <div class="payment-addon__pricing">
+                    <div class="payment-addon__price t-body-4-bold" data-qa="addon-price">₹0.00</div>
+                  </div>
+                </div>
+                <div class="payment-addon" data-qa="addon-line" data-qa-value="domain">
+                  <div class="flex-grow d-flex align-items-center">
+                    <div class="payment-addon__name t-body-4">Domain name</div>
+                    <div class="v-popper v-popper--theme-tooltip h-tooltip">
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="h-icon h-icon--small payment-addon__help" data-qa="icon" style="color: var(--primary--500)">
+                          <path fill="currentColor" d="M7.02 6.487c0-.541.44-.98.98-.98h.128c.47 0 .851.382.851.852a.7.7 0 0 1-.054.265.5.5 0 0 1-.052.097.2.2 0 0 1-.026.03l-.59.442C7.69 7.62 7.25 8.24 7.25 9.081a.75.75 0 0 0 1.5 0c0-.247.106-.461.408-.688l.589-.442c.533-.4.732-1.093.732-1.592a2.35 2.35 0 0 0-2.35-2.352H8a2.48 2.48 0 0 0-2.48 2.48.75.75 0 0 0 1.5 0M7.992 10.493a.75.75 0 0 0 0 1.5H8a.75.75 0 0 0 0-1.5z"></path>
+                          <path fill="currentColor" fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0m-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-addon__old-price t-body-5-line-through h-mr-8" data-qa="addon-old-price">₹1,159.00</div>
+                  <div class="payment-addon__pricing">
+                    <div class="payment-addon__price t-body-4-bold" data-qa="addon-price">₹0.00</div>
+                  </div>
+                </div>
+                <div class="payment-addon" data-qa="addon-line" data-qa-value="privacy_protection">
+                  <div class="flex-grow d-flex align-items-center">
+                    <div class="payment-addon__name t-body-4">Domain privacy protection</div>
+                  </div>
+                  <div class="payment-addon__pricing">
+                    <div class="payment-addon__price t-body-4-bold" data-qa="addon-price">₹0.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hcart-estimate__divider h-mt-24"></div>
+          </div>
+          <div class="hcart-estimation-taxes">
+            <div class="d-flex align-items-center justify-content-space-between">
+              <div class="d-flex align-items-center t-body-3">Taxes</div>
+              <div class="t-body-3" data-qa="taxes">-</div>
+            </div>
+            <div class="hcart-estimation-taxes__tax-hint t-body-4">Calculated after you provide your billing address</div>
+          </div>
+          <div class="hcart-estimate__divider"></div>
+          <div class="hcart-estimation-total">
+            <div class="d-flex align-items-center justify-content-space-between">
+              <div class="t-headline-pt">Subtotal</div>
+              <div class="d-flex align-items-center">
+                <div class="hcart-estimation-total__old-price t-body-5-line-through h-mr-8" data-qa="subtotal-old-price">₹31,708.00</div>
+                <div class="t-headline-pt" data-qa="subtotal-price">₹6,672.00</div>
+              </div>
+            </div>
+            <div class="h-mt-16">
+              <div><a id="hcart-have-a-coupon-btn" class="t-body-3-bold" data-qa="have-a-coupon-code-button" aria-label="Have a coupon code?">Have a coupon code?</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="hcart-estimate--pricing hcart-estimate--pricing--expanded order-summary-expanded">
+          <div class="hcart-estimate__expanded-header justify-content-space-between align-items-center h-mb-12">
+            <div></div>
+            <div class="t-headline-pt">Order summary</div>
+            <button class="h-icon-button" id="collapse-summary" aria-label="Close" aria-disabled="false" aria-busy="false" tabindex="0" style="--4d45c026: var(--transparent); --d936888a: 1px solid transparent; --ee1f8c18: var(--primary--500); --3ae1a490: var(--neutral--300); --bca24e7c: var(--transparent); --4e776f57: 1px solid transparent; --489d3a41: 1px solid transparent; --3f6966b8: var(--primary--50); --75d4b7a8: var(--primary--500)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="h-icon h-icon--small" data-qa="icon" style="color: var(--neutral--1000)"><path fill="currentColor" d="M3.97 5.03a.75.75 0 0 1 1.06-1.06L8 6.94l2.97-2.97a.75.75 0 1 1 1.06 1.06L9.06 8l2.97 2.97a.75.75 0 1 1-1.06 1.06L8 9.06l-2.97 2.97a.75.75 0 0 1-1.06-1.06L6.94 8z"></path></svg>
+            </button>
+          </div>
+          <div class="scrollable-area">
+            <div class="hcart-estimate__line-title d-none d-block-lg t-body-3"><div class="t-headline-pt h-mb-16">Order summary</div></div>
+
+            <div class="hcart-estimate__plan-info">
+              <div class="d-flex align-items-center">
+                <div class="plan-info__plan-name plan-info__plan-name--desktop h-my-0 align-items-center t-body-3-bold" data-qa="plan-name" data-qa-value="Premium Web Hosting">Premium Web Hosting</div>
+                <div class="plan-info__plan-name h-my-0 t-body-4-bold">Premium Web Hosting</div>
+              </div>
+              <div class="hcart-estimate__plan-months d-flex justify-content-space-between align-items-center t-body-4" data-qa="plan-information-line">
+                <div>48-month plan</div>
+                <div class="d-flex align-items-center">
+                  <div class="hcart-estimate__old-price t-body-5-line-through h-mr-8" data-qa="plan-old-price">₹28,752.00</div>
+                  <b data-qa="plan-price">₹6,672.00</b>
+                </div>
+              </div>
+
+              <div class="hcart-estimate__perks">
+                <div class="payment-addon" data-qa="addon-line" data-qa-value="extra_months">
+                  <div class="flex-grow d-flex align-items-center">
+                    <div class="payment-addon__name t-body-4">3 extra months</div>
+                  </div>
+                  <div class="payment-addon__old-price t-body-5-line-through h-mr-8" data-qa="addon-old-price">₹1,797.00</div>
+                  <div class="payment-addon__pricing"><div class="payment-addon__price t-body-4-bold" data-qa="addon-price">₹0.00</div></div>
+                </div>
+                <div class="payment-addon" data-qa="addon-line" data-qa-value="domain">
+                  <div class="flex-grow d-flex align-items-center">
+                    <div class="payment-addon__name t-body-4">Domain name</div>
+                    <div class="v-popper v-popper--theme-tooltip h-tooltip">
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="h-icon h-icon--small payment-addon__help" data-qa="icon" style="color: var(--primary--500)">
+                          <path fill="currentColor" d="M7.02 6.487c0-.541.44-.98.98-.98h.128c.47 0 .851.382.851.852a.7.7 0 0 1-.054.265.5.5 0 0 1-.052.097.2.2 0 0 1-.026.03l-.59.442C7.69 7.62 7.25 8.24 7.25 9.081a.75.75 0 0 0 1.5 0c0-.247.106-.461.408-.688l.589-.442c.533-.4.732-1.093.732-1.592a2.35 2.35 0 0 0-2.35-2.352H8a2.48 2.48 0 0 0-2.48 2.48.75.75 0 0 0 1.5 0M7.992 10.493a.75.75 0 0 0 0 1.5H8a.75.75 0 0 0 0-1.5z"></path>
+                          <path fill="currentColor" fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0m-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-addon__old-price t-body-5-line-through h-mr-8" data-qa="addon-old-price">₹1,159.00</div>
+                  <div class="payment-addon__pricing"><div class="payment-addon__price t-body-4-bold" data-qa="addon-price">₹0.00</div></div>
+                </div>
+                <div class="payment-addon" data-qa="addon-line" data-qa-value="privacy_protection">
+                  <div class="flex-grow d-flex align-items-center">
+                    <div class="payment-addon__name t-body-4">Domain privacy protection</div>
+                  </div>
+
+                  <div class="payment-addon__pricing"><div class="payment-addon__price t-body-4-bold" data-qa="addon-price">₹0.00</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="hcart-estimate__divider h-mt-24"></div>
+          </div>
+
+          <div class="hcart-estimation-taxes">
+            <div class="d-flex align-items-center justify-content-space-between">
+              <div class="d-flex align-items-center t-body-3">Taxes</div>
+              <div class="t-body-3" data-qa="taxes">-</div>
+            </div>
+            <div class="hcart-estimation-taxes__tax-hint t-body-4">Calculated after you provide your billing address</div>
+          </div>
+
+          <div class="hcart-estimate__divider"></div>
+          <div class="hcart-estimation-total">
+            <div class="d-flex align-items-center justify-content-space-between">
+              <div class="t-headline-pt subtotal">Subtotal</div>
+              <div class="d-flex align-items-center">
+                <div class="hcart-estimation-total__old-price t-body-5-line-through h-mr-8" data-qa="subtotal-old-price">₹31,708.00</div>
+                <div class="t-headline-pt" data-qa="subtotal-price">₹6,672.00</div>
+              </div>
+            </div>
+
+            <div class="h-mt-16">
+              <div><a id="hcart-have-a-coupon-btn" class="t-body-3-bold" data-qa="have-a-coupon-code-button" aria-label="Have a coupon code?">Have a coupon code?</a></div>
+            </div>
+          </div>
+        </div>
+
+        <button class="h-button-v2 h-button-v2--large hcart-estimate__continue-button" aria-label="Continue" aria-expanded="false" data-qa="continue-button" style="--61835142: var(--neutral--0); --871d3846: var(--neutral--0); --0f634a62: var(--primary--500); --5fee621c: 1px solid transparent; --4572d579: var(--neutral--0); --5eaa8b2a: var(--neutral--300); --d3e748e4: 1px solid transparent; --1c67916a: 1px solid transparent; --761418ca: var(--primary--600)">
+          <div class="h-button-v2__loader" style="display: none">
+            <div class="loader" data-qa="loader" style="--61c1c1bf: 4px; --54d0f536: var(--neutral--0); --3e0be0b1: var(--primary--500); --3f22df14: 24px; --e92becce: 24px"></div>
+          </div>
+          <span class="h-typography h-typography-button-1 h-button-v2__text">Continue</span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
